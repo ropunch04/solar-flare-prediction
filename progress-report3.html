@@ -28,61 +28,19 @@
 							<!-- Banner -->
 								<section id="banner">
 									<div class="content">
-										<header>
-											<h2>Solar Phenomena Prediction</h2>
-											<p>Overview</p>
+										<header class="main">
+											<h2>Progress Update 3 (10/25/2021)</h2>
 										</header>
-										<p>From providing the food chain with energy to keeping us warm, the Sun is responsible of all life on Earth. However, it is still a very energetic and explosive astronomical body. Due to its high temperatures, pressures, and internal behavior, events known as Solar Phenomena occur. These can include sunspots, solar flares, coronal mass ejections, solar wind, and more. Studying these highly energetic phenomena provides us with a greater understanding of why the Sun is able to support human life, and it also gives insight into how these pheneomena impact us on Earth.</p>
-										<ul class="actions">
-											<li><a href="stellar-dynamics.html" class="button big">Learn More</a></li>
-										</ul>
-									</div>
-									<span class="image object">
-										<img src="images/solar_pheneomena.jpg" alt="Image of Various Solar Phenomena" />
-									</span>
-								</section>
-								<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Recent Progress</h2>
-									</header>
-									<div class="posts">
-										<article>
-											<a href="#" class="image">
-												<img src="#" alt="">
-											</a>
-											<h3>Progress Update 3 (10/25/2021)</h3>
-											<p>Sample Text</p>
-											<ul class="actions">
-												<li>
-													<a href="progress-report3.html" class="button">More</a>
-												</li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image">
-												<img src="#" alt="">
-											</a>
-											<h3>Progress Update 2 (10/13/2021)</h3>
-											<p>Sample Text</p>
-											<ul class="actions">
-												<li>
-													<a href="progress-report2.html" class="button">More</a>
-												</li>
-											</ul>
-										</article>
-										<article>
-											<a href="progress-report1.html" class="image">
-												<img src="#" alt="">
-											</a>
-											<h3>Progress Update 1 (9/28/2021)</h3>
-											<p>Sample Text</p>
-											<ul class="actions">
-												<li>
-													<a href="progress-report1.html" class="button">More</a>
-												</li>
-											</ul>
-										</article>
+										<span class="image main">
+											<img src="images/cnn.jpg" alt="Image of Sample CNN">
+										</span>
+										<p>Following feature extraction (preprocessing), the actual machine learning aspect of the project comes in. Since I'm using feature extraction,
+										   I know that I'm using some form of CNN. I plan on analyzing features from 24 hours before a flare event, meaning my features will also be sequential, or a time series.
+										   This leads me to believe that a CNN-LSTM would be most optimal for my purposes; however, I do plan on using many other models as well since some of the researches I read
+										   had decent results with different models. I'm specifically classifying whether or not a solar flare occurs, as well as the intensity of the flare since that directly affects us on Earth.
+										   So, this is a multiclass classification problem. I've looked at One-vs-Rest and One-vs-All methods of classification, and both methods have pros and cons, so
+										   I plan on trying both methods using <a href="https://machinelearningmastery.com/one-vs-rest-and-one-vs-one-for-multi-class-classification/" target="_blank">this</a> tutorial.
+										</p>
 									</div>
 								</section>
 						</div>
