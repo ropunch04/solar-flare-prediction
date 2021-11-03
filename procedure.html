@@ -29,61 +29,35 @@
 								<section id="banner">
 									<div class="content">
 										<header>
-											<h2>Solar Phenomena Prediction</h2>
-											<p>Overview</p>
+											<h2>Procedural Summary</h2>
 										</header>
-										<p>From providing the food chain with energy to keeping us warm, the Sun is responsible of all life on Earth. However, it is still a very energetic and explosive astronomical body. Due to its high temperatures, pressures, and internal behavior, events known as Solar Phenomena occur. These can include sunspots, solar flares, coronal mass ejections, solar wind, and more. Studying these highly energetic phenomena provides us with a greater understanding of why the Sun is able to support human life, and it also gives insight into how these pheneomena impact us on Earth.</p>
-										<ul class="actions">
-											<li><a href="stellar-dynamics.html" class="button big">Learn More</a></li>
-										</ul>
+										<p>
+											<b>Step 1 (replication): </b>Replicate Solar Flare Prediction from other studies and incorporate their best features together (Nishizuka et al. (2018); Wang et al. (2020); Nishizuka et al. (2017)).
+										</p>
+										<span class="image object">
+											<img src= "images/research_papers.png" alt="Research Papers to Replicate">
+										</span>
+										<p>
+											<b>Step 2 (preprocessing): </b>Collect SDO Images 24 hours prior to a solar flare –> Each 24-hour set of Sun images correspond to intensity of solar flare –> CNN to feature extract Active Regions –> Run a sequence classification LSTM neural network –> Determine intensity and time of solar flare.
+											<b>Step 3 (solar flare vs cme): </b>Expand this classification into CMEs and be able to differentiate between the two.
+										</p>
+										<span class="image object">
+											<img src= "images/cmevssolar.jpeg" alt="CMEs and Solar Flares">
+										</span>
+										<p>
+											<b>Step 4 (theory): </b>Potentially investigate whether or not CMEs and solar flares are dependent on each other and provide a scientific backbone for this.
+										</p>
+										<span class="image object">
+											<img src= "images/magneticreconnection.png" alt="Process of Magnetic Reconnection">
+										</span>
+										<p>
+											<b>Step 5 (distant stars): </b>Expand into distant stars by using feature extraction on light curve data (extract the same features from SDO images and light curves).
+										</p>
+										<span class="image object">
+											<img src= "images/light_curve.png" alt="Light Curve of Distant Star">
+										</span>
 									</div>
-									<span class="image object">
-										<img src="images/solar_pheneomena.jpg" alt="Image of Various Solar Phenomena" />
-									</span>
-								</section>
-								<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Recent Progress</h2>
-									</header>
-									<div class="posts">
-										<article>
-											<a href="#" class="image">
-												<img src="#" alt="">
-											</a>
-											<h3>Progress Update 3 (10/25/2021)</h3>
-											<p>Sample Text</p>
-											<ul class="actions">
-												<li>
-													<a href="progress-report3.html" class="button">More</a>
-												</li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image">
-												<img src="#" alt="">
-											</a>
-											<h3>Progress Update 2 (10/13/2021)</h3>
-											<p>Sample Text</p>
-											<ul class="actions">
-												<li>
-													<a href="progress-report2.html" class="button">More</a>
-												</li>
-											</ul>
-										</article>
-										<article>
-											<a href="progress-report1.html" class="image">
-												<img src="#" alt="">
-											</a>
-											<h3>Progress Update 1 (9/28/2021)</h3>
-											<p>Sample Text</p>
-											<ul class="actions">
-												<li>
-													<a href="progress-report1.html" class="button">More</a>
-												</li>
-											</ul>
-										</article>
-									</div>
+									
 								</section>
 						</div>
 					</div>
