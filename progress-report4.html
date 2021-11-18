@@ -29,16 +29,17 @@
 								<section id="banner">
 									<div class="content">
 										<header class="main">
-											<h2>Progress Update 1 (9/28/2021)</h2>
+											<h2>Progress Update 4 (11/17/2021)</h2>
 										</header>
 										<span class="image main">
-											<img src="images/sdo_image.jpg" alt="Image of Sun under 94 Angstrom Wavelength Filter">
+											<img src="images/sample_data.jpg" alt="Sample Magnetogram Image from Created Dataset">
 										</span>
-										<p>Last year, my research project was centered around predicting the stellar activity of both our Sun and distant stars
-											(<a href="astero.vercel.app" target="_blank">astero.vercel.app</a>). However, while we predicted the general stellar activity trend one may see in a stellar cycle, we never truly were able to predict specific phenomena. 
-											My new project aims at doing just that in order to complement and fully complete last year's project. By predicting stellar flares, I will have taken the prediction of stellar activity one step further, allowing for an even better understanding of our Sun
-											and an early-detection method for incoming flares. Additionally, I plan to expand this into distant stars as well. My general procedure includes extracting features from Sun images, so in this research, I'll explore whether its possible to extract those <i>same
-											features</i> from light curves themselves, allowing for distant star solar flare detection. Currently, I have this idea but I'm yet to find a data set and research into the true feasibility of the project.
+										<p>Since the SDO database had no bulk download option, I had to use web scraping to collect my images. 
+                                            I used HTTP requests the scrape the website's HTML code and collect the urls for every image. 
+                                            Then, without downloading the images yet, I sorted the images I wanted based on filtergram, resolution, and time (with a 1 hour cadence). 
+                                            Now, I've reduced my data to about 100 images per day. By simply changing the year, month, and date variables within the program I can compile all my needed data. 
+                                            The next step is to read the txt files from GOES containing flare event information (specifically, peak time and intensity). 
+                                            Then, I will attach a flare intensity label to every SDO image 24 hours before the flare. After this, my next big step will be extracting relevant features.
 										</p>
 									</div>
 								</section>
